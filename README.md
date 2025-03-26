@@ -16,31 +16,51 @@ A single-file Streamlit application designed to optimize airline call center ope
 - *Regular Expressions*: Pattern matching for data extraction
 
 ## 💻 Quick Start Guide
+## 📥 Installation
 
-### ⚙ Setup Environment
-bash
-# Create virtual environment
-python -m venv env
+### Prerequisites
 
-# Activate environment
-# For Windows:
-env\Scripts\activate
-# For macOS/Linux:
-source env/bin/activate
+- Python 3.8 or higher
+-  pip package manager
 
-# Install dependencies
-pip install streamlit together python-dotenv
+### Setup
 
+1. Clone this repository:
+   
+   git clone https://github.com/Rahul21082004/Airline-Agent.git
+   cd Airline-Agent
+   
 
-### 🔑 Configure API (Optional)
-Create a .env file with:
+2. Create a virtual environment (recommended):
+   
+   python -m venv venv
+   
 
-TOGETHER_API_KEY=your_key_here
+3. Activate the virtual environment:
+   - On Windows:
+     
+     venv\Scripts\activate
+     
+   - On macOS/Linux:
+     
+     source venv/bin/activate
+     
 
+4. Install the required dependencies:
+   
+   pip install -r requirements.txt
+   
 
-### 🚀 Launch Application
-bash
-streamlit run main.py
+5. Create a .env file in the project root and add your Together AI API key (optional):
+   
+   TOGETHER_API_KEY=your_api_key_here
+   
+
+## 🚀 Running the Code
+
+1. Run the application:
+
+  streamlit run main.py
 
 
 ## 📊 Available Services
